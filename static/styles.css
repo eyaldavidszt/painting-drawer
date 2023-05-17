@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: roboto, sans-serif;
+    overflow: auto;
 
 }
 
@@ -25,8 +26,8 @@ h1 {
     color: white;
     display: flex;
     justify-content: center;
-    gap: 48px;
-    flex: 1;
+    gap: 64px;
+    flex: auto;
     align-items: center;
 }
 .huge {
@@ -41,8 +42,11 @@ h1 {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: white;
-    flex: 1;
+    flex: auto;
 }
 
 
@@ -58,7 +62,7 @@ a, .smaller {
     color: #E5E7EB;
 }
 
-button {
+button.main {
     background-color: #3882F6;
     padding: 12px 36px;
     color: white;
@@ -71,7 +75,37 @@ button {
 
 }
 
+img {
+    border-radius: 10px;
+
+}
+.item img {
+    width: 150px;
+    height: 150px;
+}
+
 button:hover {
     transform: scale(1.05);
 
 }
+
+.top {
+    align-self: center;
+}
+.content h1 {
+    color: black;
+    font-size: 36px;
+}
+.bot {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 150px;
+}
+
