@@ -46,6 +46,8 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .huge {
@@ -66,10 +68,14 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-    flex: 2;
+    flex: 1;
 }
 
 .quote {
+
+    padding-left: 16px;
+    padding-right: 16px;
+
 background-color: #E5E7EB;
 font-size: 36px;
 color: #1F2937;
@@ -103,6 +109,15 @@ a, .smaller {
     text-decoration: none;
 
     color: #E5E7EB;
+}
+
+li:first-child {
+    margin-left: 8px;
+}
+
+
+.smaller {
+    max-width: 350px;
 }
 
 button.main{
@@ -159,7 +174,7 @@ button:hover {
 }
 
 .footer {
-    flex: 1;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
