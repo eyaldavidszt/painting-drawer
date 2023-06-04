@@ -117,7 +117,9 @@ gap: 36px;
 }
 
 .inside-quote {
-    max-width: 50%;
+    padding: 8px;
+    max-width: 70%;
+    font-size:clamp(24px, 5vw, 32px);
 }
 
 
@@ -214,9 +216,7 @@ button:hover {
 }
 
 .modal {
-    margin-top: 16px;
-    margin-bottom: 16px;
-
+    margin: 16px;
     align-self: center;
     gap: 24px;
     display: flex;
